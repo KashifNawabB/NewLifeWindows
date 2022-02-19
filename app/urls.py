@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from app.views import MyView
+from app.views import *
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
-    path('', MyView.as_view(), name='home'),
+    path('', HomeView.as_view(), name='home'),
+    path('page_window', windowPage, name='page_window'),
+    path('page_door', doorPage, name='page_door'),
+    path('page_contact', contactPage, name='page_contact'),
+    path('company_info', companyInfo, name='company_info'),
 ]
 
 # urlpatterns += staticfiles_urlpatterns()
