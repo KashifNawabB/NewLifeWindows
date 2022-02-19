@@ -35,7 +35,7 @@
                         <div id="rev-slider2" class="rev_slider fullwidthabanner">
                             <ul>
                             <!-- Slide 1 -->
-                            <li data-transition="random">
+                            <li data-transition="random" class="slider_img" style="background-image: url({% static "images/windows/win2.jpg" %}); ">
                                     <!-- Main Image -->
                                     <!-- Layers -->
                                     <div
@@ -162,7 +162,7 @@
                             </li>
                             <!-- /End Slide 1 -->
                             <!-- Slide 2 -->
-                            <li data-transition="random">
+                            <li data-transition="random" class="slider_img" style="background-image: url({% static "images/windows/bifolddoor.jpg" %}); ">
                                 <!-- Main Image -->
                                 <!-- Layers -->
                                 <div
@@ -287,6 +287,8 @@
                                 </div>
                             </li>
                             <!-- /End Slide 2 -->
+                                <!-- Slider 3-->
+                            <li data-transition="random" class="slider_img" style="background-image: url({% static "images/windows/windoor3.jpg" %}); ">
                             </ul>
                         </div>
                     </div>
@@ -309,20 +311,20 @@
                                 <div class="flat-title">Services for You</div>
                             </div>
                             </div>
-                            <div class="content-service">
-                            <p class="content-p color-style1">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                                justo duo dolores et ea rebum. Stet clita kasd
-                            </p>
-                            </div>
+{#                            <div class="content-service">#}
+{#                            <p class="content-p color-style1">#}
+{#                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed#}
+{#                                diam nonumy eirmod tempor invidunt ut labore et dolore magna#}
+{#                                aliquyam erat, sed diam voluptua. At vero eos et accusam et#}
+{#                                justo duo dolores et ea rebum. Stet clita kasd#}
+{#                            </p>#}
+{#                            </div>#}
                         </div>
                         <div class="themesflat-spacer clearfix" data-desktop="43" data-mobile="43" data-smobile="43"></div>
                         <div class="col-sm-4">
                             <div class="image-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                            <img src="{% static 'images/Services/imgservice1.jpg' %}" alt="">
+                            <img src="{% static 'images/windows/win3.png' %}" alt="">
                             </div>
                             <span class="number">01</span>
                             <div class="icon-window">
@@ -345,7 +347,7 @@
                             <div
                             class="image-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="{% static 'images/Services/imgservice2.jpg' %}" alt="">
+                                <img src="{% static 'images/windows/doorservice.jpg' %}" alt="">
                             </div>
                             <span class="number">02</span>
                             <div class="icon-window icon-window-style2">
@@ -405,7 +407,7 @@
                         <div class="col-sm-6 no-padding-right clearfix">
                         <div class="image-hover about-image">
                             <div class="image">
-                            <img src="{% static 'images/Secsion/imgabouth2.jpg' %}" alt="images">
+                            <img src="{% static 'images/windows/bifold.png' %}" alt="images">
                             </div>
                             <span class="bg-img">
                             </span>
@@ -1018,7 +1020,9 @@
                                     <div class="content">
                                         <div class="text"><span>Working Hours</span></div>
                                         <div class="text-time">
-                                        <span>Mon - Sat 9.00 to 18.00</span>
+                                            <span>Monday - Friday 9AM-06PM<br><br>
+                                                    Saturday 9AM-05PM
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
