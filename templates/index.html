@@ -16,112 +16,12 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
-    <!-- Theme style -->
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/style.css' %}"  />
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/shortcodes.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/color.css' %}"/>
-    <!-- Animation -->
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/animate.css' %}" />
 
-    <!-- Reponsive -->
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/responsive.css' %}" />
-
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-       <!-- Favicon and touch icons  -->
-       <link href="{% static 'images/Icon/Favicon.png' %}" rel="apple-touch-icon-precomposed">
-       <link href="{% static 'images/Icon/Favicon.png' %}" rel="apple-touch-icon-precomposed">
-       <link href="{% static 'images/Icon/Favicon.png' %}" rel="shortcut icon">
   </head>
   <body class="counter-scroll header-fixed header_sticky">
     <div class="animsition boxed blog">
         <header id="header" class="header">
-        <div class="topbar clearfix" id="topbar">
-        <div class="container">
-            <div class="tf-topbar">
-            <ul class="top-content">
-                <li class="adress">
-                    <a href="#" ><i class="icon-iconmap"></i> 2072 Pinnickinick Street, WA 98370</a >
-                </li>
-                <li class="email">
-                    <a href="#" ><i class="icon-iconmail"></i>info@website.com</a >
-                </li>
-            </ul>
-                <div class="topbar-socials">
-                    <span class="icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </span>
-                </div>
-            </div>
-        </div>
-        </div>
-
-          <div class="main-top clearfix"> 
-            <div class="container container-fixel">
-                <div class="logo bg-white">
-              
-              <a href="">
-                <img src="{% static 'logo/LogoDark.png' %}" loading="lazy" alt="images" data-retina="logo/LogoDark@2x.png">
-              </a>
-            </div>
-            <!-- logo -->
-
-            <div class="content-wrap clearfix">
-            <div class="nav-wrap">
-                <div class="btn-menu">
-                  <span></span>
-                </div>
-                <nav id="mainnav" class="mainnav">
-                    <ul class="menu">
-                        <li class="menu-item-has-children current-menu current-menu-item current-menu-ancestor">
-                            <a href="index.html">Home</a>
-                            <ul class="sub-menu">
-                                <li class="current-menu-item"><a href="index.html">Home 1</a></li>
-                                <li><a href="home2.html">Home 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="page-window.html">Windows</a>
-                        </li>
-                        <li><a href="page-door.html">Doors</a>
-                        </li>
-                        <li class="menu-item-has-children"><a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="page-about.html">About Us</a></li>
-                                <li><a href="about-company-infomation.html">Company Infomation</a></li>
-                                <li><a href="service.html">Services</a></li>
-                                <li><a href="service-details.html">Service Details</a></li>
-                                <li><a href="page-case-study.html">Case Study</a></li>
-                                <li><a href="study-details.html">Case Study Details</a></li>
-                                <li><a href="page-gallery.html">Gallery</a></li>
-                                <li><a href="page-Request-caculator.html">Cost Caculator</a></li> 
-                                <li class="menu-item-has-children"><a href="blog-standard.html">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="page-contact.html">Contact</a></li>                      
-                    </ul>
-                  <!-- /.menu -->
-                </nav>
-                <!-- /#mainnav -->
-            </div>
-              <!-- /.nav-wrap -->
-                <div class="flat-appointment">
-                    <a href="page-Request-caculator.html" class="themesflat-button btn-style-one">
-                    <span class="btn-title">MAKE AN ORDER</span>
-                    </a>
-                </div>
-            </div>
-            <!-- content-wrap -->
-          </div>
-          <!-- /.header-wrap -->
-        </div>
-        <!-- /.container -->
+        {% include 'navbar.html' %}
     </header>
       <!-- /header -->
 
@@ -1407,7 +1307,7 @@
                                 <div class="image-box">
                                     <div class="image boder-style2">
                                     <img
-                                        src="images/Secsion/imgtestimonio1.jpg"
+                                        src="{% static 'images/Secsion/imgtestimonio1.jpg' %}"
                                         alt="image"
                                     />
                                     </div>
@@ -1714,7 +1614,7 @@
                         <div class="logo">
                         <a href="index.html">
                             <img
-                            src="logo/Logolight.png"
+                            src="{% static 'logo/Logolight.png' %}"
                             data-width="168"
                             data-height="38"
                             alt="images"
@@ -1748,36 +1648,36 @@
         </a>
 
 
-    <!-- Javascript -->
-
-    <script src="{% static 'javascript/jquery.min.js' %}"></script>
-    <script src="{% static 'javascript/plugins.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/bootstrap.min.js' %}"></script>
-    <script src="{% static 'javascript/parallax.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/jquery-countTo.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/jquery.easing.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/jquery.cookie.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/waypoints.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/wow.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'javascript/animsition.js' %}"></script>
-    <!--owl.carousel-->
-    <script type="text/javascript" src="{% static 'javascript/owl.carousel.min.js' %}"></script>
-
-    <!-- slider -->
-    <script src="{% static 'rev-slider/js/jquery.themepunch.revolution.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/jquery.themepunch.tools.min.js' %}"></script>
-    <script src="{% static 'javascript/rev-slider.js' %}"></script>
-
-    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.actions.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.carousel.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.kenburn.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.layeranimation.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.migration.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.navigation.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js' %}"></script>
-    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.video.min.js' %}"></script>
+{#    <!-- Javascript -->#}
+{##}
+{#    <script src="{% static 'javascript/jquery.min.js' %}"></script>#}
+{#    <script src="{% static 'javascript/plugins.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/bootstrap.min.js' %}"></script>#}
+{#    <script src="{% static 'javascript/parallax.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery-countTo.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery.easing.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery.cookie.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/waypoints.min.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/wow.min.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/animsition.js' %}"></script>#}
+{#    <!--owl.carousel-->#}
+{#    <script type="text/javascript" src="{% static 'javascript/owl.carousel.min.js' %}"></script>#}
+{##}
+{#    <!-- slider -->#}
+{#    <script src="{% static 'rev-slider/js/jquery.themepunch.revolution.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/jquery.themepunch.tools.min.js' %}"></script>#}
+{#    <script src="{% static 'javascript/rev-slider.js' %}"></script>#}
+{##}
+{#    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.actions.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.carousel.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.kenburn.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.layeranimation.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.migration.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.navigation.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.video.min.js' %}"></script>#}
   </body>
 </html>

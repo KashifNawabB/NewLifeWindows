@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+{% include 'base_file.html' %}
+<body>
+<div class="topbar clearfix" id="topbar">
+        <div class="container">
+            <div class="tf-topbar">
+            <ul class="top-content">
+                <li class="adress">
+                    <a href="#" ><i class="icon-iconmap"></i> 2072 Pinnickinick Street, WA 98370</a >
+                </li>
+                <li class="email">
+                    <a href="#" ><i class="icon-iconmail"></i>info@website.com</a >
+                </li>
+            </ul>
+                <div class="topbar-socials">
+                    <span class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-top clearfix">
+        <div class="container container-fixel">
+            <div class="logo bg-white">
+              <a href="index.html">
+                <img src="{% static 'logo/LogoDark.png' %}" alt="images" data-retina="logo/LogoDark@2x.png" width="168" height="38" />
+              </a>
+            </div>
+            <!-- logo -->
+    <div class="content-wrap clearfix">
+                <div class="nav-wrap">
+                        <div class="btn-menu">
+                        <span></span>
+                        </div>
+                        <nav id="mainnav" class="mainnav">
+                            <ul class="menu">
+                                <li class="menu-item-has-children">
+                                    <a href="index.html">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="home2.html">Home 2</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="current-menu-item current-menu"><a href="page-window.html">Windows</a>
+                                </li>
+                                <li><a href="page-door.html">Doors</a>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="page-about.html">About Us</a></li>
+                                        <li><a href="about-company-infomation.html">Company Infomation</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                        <li><a href="page-case-study.html">Case Study</a></li>
+                                        <li><a href="study-details.html">Case Study Details</a></li>
+                                        <li><a href="page-gallery.html">Gallery</a></li>
+                                        <li><a href="page-Request-caculator.html">Cost Caculator</a></li>
+                                        <li class="menu-item-has-children"><a href="blog-standard.html">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog-standard.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/page_contact">Contact Us</a></li>
+                            </ul>
+                        <!-- /.menu -->
+                        </nav>
+                    <!-- /#mainnav -->
+                    </div>
+                <!-- /.nav-wrap -->
+                <div class="flat-appointment">
+                    <a href="page-Request-caculator.html" class="themesflat-button btn-style-one">
+                    <span class="btn-title">MAKE AN ORDER</span>
+                    </a>
+                </div>
+            </div>
+            <!-- content-wrap -->
+        </div>
+      <!-- /.header-wrap -->
+    </div>
+    <!-- /.container -->
+</body>
+</html>

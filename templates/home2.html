@@ -1,132 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janelas – Windows & Doors HTML Template</title>
-    <meta name="author" content="themsflat.com" />
+<!-- contains no base file.. stand alone file-->
 
-   
-       <!-- Theme style -->
-       <link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
-       <link rel="stylesheet" type="text/css" href="stylesheet/shortcodes.css" />
-       <link rel="stylesheet" type="text/css" href="stylesheet/color.css" />
-       <!-- Animation -->
-       <link rel="stylesheet" type="text/css" href="stylesheet/animate.css" />
-   
-       <!-- Reponsive -->
-       <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css" />
-   
-       <!-- <link rel="stylesheet" href="revolution/css/settings.css"> -->
-   
-       <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-       />
-       <!-- Favicon and touch icons  -->
-       <link href="images/Icon/Favicon.png" rel="apple-touch-icon-precomposed">
-       <link href="images/Icon/Favicon.png" rel="apple-touch-icon-precomposed">
-       <link href="images/Icon/Favicon.png" rel="shortcut icon">
-</head>
-<body class="counter-scroll header_sticky_style2">
-    <div class="animsition boxed blog">
-        <div class="top-bar-style2 clearfix">
-            <div class="container-fluid">
-                <ul class="top-content">
-                    <li class="adress">
-                      <a href="#"><i class="icon-iconmap"></i> 2072 Pinnickinick Street, WA 98370</a>
-                    </li>
-                    <li class="email"><i class="icon-iconmail"></i> <a href="#">info@website.com</a></li>
-                  </ul>
-  
-                <div class="topbar-socials">
-                  <span class="icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </span>
-                </div>
-            </div>    
-        </div>
-        <header class="header-style2 bg-color-style2 bg-color" id="header">
-            <div class="container-fluid container-fixel">
-              <div class="flex-header d-lg-flex">
-                     <div class="logo logo-style2">
-                        <a href="index.html"> <img src="logo/LogoDark.png"  data-retina="logo/LogoDark@2x.png" alt="images"></a>
-                     </div>
-                     <div class="content-menu d-lg-flex">
-                    <div class="nav-wrap">
-                        <div class="btn-menu">
-                          <span></span>
-                        </div>
-                        <nav id="mainnav" class="mainnav fixed-mainnav">
-                          <ul class="menu menustyle2">
-                            <li class="menu-item-has-children current-menu current-menu-item current-menu-ancestor ">
-                                <a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home 1</a></li>
-                                    <li class="current-menu-item"><a href="home2.html">Home 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-window.html">Windows</a>
-                            </li>
-                            <li><a href="page-door.html">Doors</a>
-                            </li>
-                            <li class="menu-item-has-children"><a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="page-about.html">About Us</a></li>
-                                    <li><a href="about-company-infomation.html">Company Infomation</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="service-details.html">Service Details</a></li>
-                                    <li><a href="page-case-study.html">Case Study</a></li>
-                                    <li><a href="study-details.html">Case Study Details</a></li>
-                                    <li><a href="page-gallery.html">Gallery</a></li>
-                                    <li><a href="page-Request-caculator.html">Cost Caculator</a></li> 
-                                    <li class="menu-item-has-children"><a href="blog-standard.html">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="page-contact.html">Contact</a></li>                      
-                        </ul>
-                          <!-- /.menu -->
-                        </nav>
-                        <!-- /#mainnav -->
-                      </div>
-                      <!-- /.nav-wrap -->
-
-                      <div class="search-btn">
-        
-
-                          <div class="btn-top">
-                              <a href="page-contact.html" class="themesflat-button-style2 btn-style-4">
-                              <span class="btn-title">Get A Quote</span>
-                          </a>
-                          </div>
-                          <div class="flat-show-search">
-                            <div class="show-search">
-                                <a href="#"><i class="fa fa-search"></i></a>                                             
-                            </div>
-                            <div class="top-search">                        
-                                <form action="#" id="searchform-all" method="get">
-                                    <div>
-                                        <input type="text" id="s" class="sss" placeholder="Search...">
-                                        <input type="submit" value="" id="searchsubmit">
-                                    </div>
-                                </form>
-                            </div> <!-- /.top-search -->
-                        </div>	<!-- /.flat-show-search -->
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </header>
-
+{% extends 'basefile.html' %}
+{% load static %}
+{#<body class="counter-scroll header_sticky_style2">#}
+{#    <div class="animsition boxed blog">#}
+{#        <div class="top-bar-style2 clearfix">#}
+{#            <div class="container-fluid">#}
+{#                <ul class="top-content">#}
+{#                    <li class="adress">#}
+{#                      <a href="#"><i class="icon-iconmap"></i> Unit A, Compass Street, Openshaw, Manchester, M11 2FS</a>#}
+{#                    </li>#}
+{#                    <li class="email"><i class="icon-iconmail"></i> <a href="#">Newlifewindows@live.co.uk, newlifepanels@gmail.com</a></li>#}
+{#                  </ul>#}
+{#  #}
+{#                <div class="topbar-socials">#}
+{#                  <span class="icons">#}
+{#                    <a href="https://www.facebook.com/New-Life-Windows-106383301005971/"><i class="fab fa-facebook-f"></i></a>#}
+{#                    <a href="#"><i class="fab fa-twitter"></i></a>#}
+{#                    <a href="#"><i class="fab fa-google-plus-g"></i></a>#}
+{#                    <a href="#"><i class="fab fa-instagram"></i></a>#}
+{#                  </span>#}
+{#                </div>#}
+{#            </div>    #}
+{#        </div>#}
+{#        <header class="header-style2 bg-color-style2 bg-color" id="header">#}
+{#       {% include 'basefile.html' %}#}
+{#        </header>#}
+{% block content %}
         <div class="slider-style2 cleafix"> 
             <div class="container">
                 <div class="overlay-slider1 cleafix"></div>
@@ -255,12 +155,9 @@
                                     data-splitout="none"
                                     data-responsive_offset="on"
                                     >
-                                    <a
-                                        href="page-contact.html"
-                                        class="themesflat-button-style2 btn-style-two"
-                                    >
-                                        <span class="btn-title">GET A QUOTE</span></a
-                                    >
+                                    <a href="/page_contact"
+                                        class="themesflat-button-style2 btn-style-two">
+                                        <span class="btn-title">GET A QUOTE</span></a>
                                     </div>
                             </li>
                             <!-- /End Slide 1 -->
@@ -385,12 +282,8 @@
                                 data-splitout="none"
                                 data-responsive_offset="on"
                                 >
-                                <a
-                                    href="page-contact.html"
-                                    class="themesflat-button-style2 btn-style-two"
-                                >
-                                    <span class="btn-title">GET A QUOTE</span></a
-                                >
+                                <a href="/page_contact" class="themesflat-button-style2 btn-style-two">
+                                    <span class="btn-title">GET A QUOTE</span></a>
                                 </div>
                             </li>
                             <!-- /End Slide 2 -->
@@ -429,11 +322,11 @@
                         <div class="col-sm-4">
                             <div class="image-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                            <img src="images/Services/imgservice1.jpg" alt="">
+                            <img src="{% static 'images/Services/imgservice1.jpg' %}" alt="">
                             </div>
                             <span class="number">01</span>
                             <div class="icon-window">
-                                <img src="images/Blog/Ellipsewindow.png" alt="images">
+                                <img src="{% static 'images/Blog/Ellipsewindow.png' %}" alt="images">
                             </div>
                             <div class="title-imagebox">
                                 <h4><a href="service-details.html">WINDOWS SERVICES</a></h4>
@@ -452,11 +345,11 @@
                             <div
                             class="image-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="images/Services/imgservice2.jpg" alt="">
+                                <img src="{% static 'images/Services/imgservice2.jpg' %}" alt="">
                             </div>
                             <span class="number">02</span>
                             <div class="icon-window icon-window-style2">
-                                <img src="images/Blog/halfmoonwindow.png" alt="images">
+                                <img src="{% static 'images/Blog/halfmoonwindow.png' %}" alt="images">
                             </div>
                             <div class="title-imagebox">
                                 <h4><a href="service-details.html">Doors Services</a></h4>
@@ -475,11 +368,11 @@
                             <div
                             class="image-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="images/Services/imgservice3.jpg" alt="">
+                                <img src="{% static 'images/Services/imgservice3.jpg' %}" alt="">
                             </div>
                             <span class="number">03</span>
                             <div class="icon-window">
-                                <img src="images/Blog/sixpaneldoor.png" alt="images">
+                                <img src="{% static 'images/Blog/sixpaneldoor.png' %}" alt="images">
                             </div>
                             <div class="title-imagebox">
                                 <h4>
@@ -512,7 +405,7 @@
                         <div class="col-sm-6 no-padding-right clearfix">
                         <div class="image-hover about-image">
                             <div class="image">
-                            <img src="images/Secsion/imgabouth2.jpg" alt="images">
+                            <img src="{% static 'images/Secsion/imgabouth2.jpg' %}" alt="images">
                             </div>
                             <span class="bg-img">
                             </span>
@@ -554,7 +447,7 @@
                         </ul>
 
                         <div class="btn-about wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <a href="page-contact.html" class="themesflat-button-style2 btn-style-two">
+                        <a href="/page_contact" class="themesflat-button-style2 btn-style-two">
                             <span class="btn-title">GET A QUOTE</span>
                         </a>
                         </div>
@@ -622,7 +515,7 @@
                                    <div class="case">
                                     <div class="featured-post">
                                         <div class="entry-image bg-linear-gradient position-relative">
-                                        <img src="images/Tab/img2tab.png" alt="images"/>    
+                                        <img src="{% static 'images/Tab/img2tab.png' %}" alt="images"/>
                                         <div class="title"><a href="page-window.html">Casement</a></div>         
                                         </div>
                                     </div>
@@ -632,7 +525,7 @@
                                     <div class="case">
                                      <div class="featured-post">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img3tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img3tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-window.html">Sash</a></div>         
                                          </div>
                                      </div>
@@ -642,7 +535,7 @@
                                     <div class="case">
                                      <div class="featured-post featured-post-style">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/imgtab1.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/imgtab1.png' %}" alt="images"/>
                                          <div class="title"><a href="page-window.html">Louvered</a></div>         
                                          </div>
                                      </div>
@@ -652,7 +545,7 @@
                                     <div class="case">
                                      <div class="featured-post">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img4tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img4tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-window.html">Pivoted</a></div>         
                                          </div>
                                      </div>
@@ -662,7 +555,7 @@
                                     <div class="case">
                                      <div class="featured-post">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img5tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img5tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-window.html">Fixed</a></div>         
                                          </div>
                                      </div>
@@ -672,7 +565,7 @@
                                     <div class="case">
                                      <div class="featured-post">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img6tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img6tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-window.html">Double</a></div>         
                                          </div>
                                      </div>
@@ -686,7 +579,7 @@
                                    <div class="case">
                                     <div class="featured-post">
                                         <div class="entry-image bg-linear-gradient position-relative">
-                                        <img src="images/Tab/img2tab.png" alt="images"/>    
+                                        <img src="{% static 'images/Tab/img2tab.png' %}" alt="images"/>
                                         <div class="title"><a href="page-door.html">Casement</a></div>         
                                         </div>
                                     </div>
@@ -696,7 +589,7 @@
                                     <div class="case">
                                      <div class="featured-post">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img3tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img3tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-door.html">Sash</a></div>         
                                          </div>
                                      </div>
@@ -706,7 +599,7 @@
                                     <div class="case">
                                      <div class="featured-post featured-post-style">
                                          <div class="entry-image bg-linear-gradient position-relative">
-                                         <img src="images/Tab/img4tab.png" alt="images"/>    
+                                         <img src="{% static 'images/Tab/img4tab.png' %}" alt="images"/>
                                          <div class="title"><a href="page-door.html">Pivoted</a></div>         
                                          </div>
                                      </div>
@@ -717,26 +610,26 @@
                     </div>
                 </div>
                 <div class="themesflat-spacer clearfix" data-desktop="85" data-mobile="40" data-smobile="30" ></div>
-                <div class="subscribe sub-style2 clearfix wow">
-                    <div class="box1-subscribe no-padding-right">
-                    <div class="title-section">
-                        <div class="sub-title">newslatter</div>
-                        <div class="flat-title-style2 margin-top15">
-                        sign up for newslatter & get lattest news & update
-                        </div>
-                    </div>
-                    </div> <!-- box1-subscribe -->
-                    <div class="box2-subscribe no-padding-left padding-top29 ">
-                    <form action="#" class="form-email" id="formsubsribe">
-                        <input type="text" id="inpsub" class="email-here" placeholder="Email Address" required/>
-                        <button
-                        type="submit"
-                        class="themesflat-button-style2 btn-style-6" >
-                        <span class="btn-title">Subscribe</span>
-                        </button>
-                    </form>
-                    </div><!-- box2-subscribe -->
-            </div>  <!-- Subscribe -->
+{#                <div class="subscribe sub-style2 clearfix wow">#}
+{#                    <div class="box1-subscribe no-padding-right">#}
+{#                    <div class="title-section">#}
+{#                        <div class="sub-title">newslatter</div>#}
+{#                        <div class="flat-title-style2 margin-top15">#}
+{#                        sign up for newslatter & get lattest news & update#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    </div> <!-- box1-subscribe -->#}
+{#                    <div class="box2-subscribe no-padding-left padding-top29 ">#}
+{#                    <form action="#" class="form-email" id="formsubsribe">#}
+{#                        <input type="text" id="inpsub" class="email-here" placeholder="Email Address" required/>#}
+{#                        <button#}
+{#                        type="submit"#}
+{#                        class="themesflat-button-style2 btn-style-6" >#}
+{#                        <span class="btn-title">Subscribe</span>#}
+{#                        </button>#}
+{#                    </form>#}
+{#                    </div><!-- box2-subscribe -->#}
+{#            </div>  <!-- Subscribe -->#}
             </div>
         </section>
           <!--  NEWSLATTER   -->
@@ -749,163 +642,163 @@
         </section>
 
 
-        <section class="features">
-            <div class="themesflat-spacer clearfix" data-desktop="120" data-mobile="60" data-smobile="50" ></div>
-                    <div class="title-section margin-botom62 text-center wow fadeInDown" >
-                        <div class="sub-title sub-title-style3">Let’s Work</div>
-                        <div class="flat-title flat-style3">
-                            Pricing Plans
-                        </div>
-                    </div>
-                    <div class="container d-lg-flex iconbox-features-bg wow fadeIn animated" data-wow-delay="0ms" data-wow-duration="1500ms">                       
-                        <div class="iconbox-features iconbox-features-hv margintop25 hv-background-before">
-                            <div class="iconbox-icon"><span class="icon-protection"></span></div>
-                            <div class="iconbox-content">
-                                <h3 class="title">$45.00</h3>
-                                <p>
-                                  Small business 
-                                </p>
-                                <ul class="icon-list text-left padding-left67">
-                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>
-                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>
-                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>
-                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>
-                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>
-                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>
-                                </ul>
-                                <div class="btn-discover">
-                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="iconbox-features iconbox-features-style2 hv-background-before active has-scale">
-                            <div class="iconbox-icon"><span class="icon-best"></span></div>
-                            <div class="iconbox-content">
-                                <h3 class="title">$65.00</h3>
-                                <p class="color-style5">
-                                  Medium business
-                                </p>
-                                <ul class="icon-list text-left padding-left67">
-                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>
-                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>
-                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>
-                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>
-                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>
-                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>
-                                </ul>
-                                <div class="btn-discover btn-discover-style2">
-                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="iconbox-features iconbox-features-hv margintop25 hv-background-before">
-                            <div class="iconbox-icon"><span class="icon-guarantee"></span></div>
-                            <div class="iconbox-content">
-                                <h3 class="title">$99.00</h3>
-                                <p>
-                                  Corporate business
-                                </p>
-                                <ul class="icon-list text-left padding-left76">
-                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>
-                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>
-                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>
-                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>
-                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>
-                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>
-                                </ul>
-                                <div class="btn-discover">
-                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="themesflat-spacer clearfix" data-desktop="119" data-mobile="60" data-smobile="50" ></div>
-        </section><!-- features -->
+{#        <section class="features">#}
+{#            <div class="themesflat-spacer clearfix" data-desktop="120" data-mobile="60" data-smobile="50" ></div>#}
+{#                    <div class="title-section margin-botom62 text-center wow fadeInDown" >#}
+{#                        <div class="sub-title sub-title-style3">Let’s Work</div>#}
+{#                        <div class="flat-title flat-style3">#}
+{#                            Pricing Plans#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="container d-lg-flex iconbox-features-bg wow fadeIn animated" data-wow-delay="0ms" data-wow-duration="1500ms">                       #}
+{#                        <div class="iconbox-features iconbox-features-hv margintop25 hv-background-before">#}
+{#                            <div class="iconbox-icon"><span class="icon-protection"></span></div>#}
+{#                            <div class="iconbox-content">#}
+{#                                <h3 class="title">$45.00</h3>#}
+{#                                <p>#}
+{#                                  Small business #}
+{#                                </p>#}
+{#                                <ul class="icon-list text-left padding-left67">#}
+{#                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>#}
+{#                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>#}
+{#                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>#}
+{#                                </ul>#}
+{#                                <div class="btn-discover">#}
+{#                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>#}
+{#                              </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="iconbox-features iconbox-features-style2 hv-background-before active has-scale">#}
+{#                            <div class="iconbox-icon"><span class="icon-best"></span></div>#}
+{#                            <div class="iconbox-content">#}
+{#                                <h3 class="title">$65.00</h3>#}
+{#                                <p class="color-style5">#}
+{#                                  Medium business#}
+{#                                </p>#}
+{#                                <ul class="icon-list text-left padding-left67">#}
+{#                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>#}
+{#                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>#}
+{#                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>#}
+{#                                </ul>#}
+{#                                <div class="btn-discover btn-discover-style2">#}
+{#                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>#}
+{#                              </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="iconbox-features iconbox-features-hv margintop25 hv-background-before">#}
+{#                            <div class="iconbox-icon"><span class="icon-guarantee"></span></div>#}
+{#                            <div class="iconbox-content">#}
+{#                                <h3 class="title">$99.00</h3>#}
+{#                                <p>#}
+{#                                  Corporate business#}
+{#                                </p>#}
+{#                                <ul class="icon-list text-left padding-left76">#}
+{#                                  <li class="icon-iconcheck"><span>Branding graphics design</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Lifetime free support</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Web devolopment course</span></li>#}
+{#                                  <li class="icon-iconcheck"><span>Unlimited free revision </span></li>#}
+{#                                  <li class="icon-iconx"><span>Web Lifetime devolopment</span></li>#}
+{#                                  <li class="icon-iconx"><span>Unlimited free revision</span></li>#}
+{#                                </ul>#}
+{#                                <div class="btn-discover">#}
+{#                                  <a href="page-Request-caculator.html" class="themesflat-button-style2 btn-style-4"><span class="btn-title">get started</span></a>#}
+{#                              </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="themesflat-spacer clearfix" data-desktop="119" data-mobile="60" data-smobile="50" ></div>#}
+{#        </section><!-- features -->#}
             
-        <section class="portfolio-slider">
-            <div class="portfolio-nav bg-color-style3 clearfix">   
-                <div class="themesflat-spacer clearfix" data-desktop="93" data-mobile="20" data-smobile="20"></div>
-                    <div class="container ">
-                        <div class="title-nav flex">                           
-                            <div class="title-section wow fadeInDown">
-                                <div class="sub-title color-style1">Portfolio</div>
-                                <div class="flat-title color-style1">Case Study</div>
-                            </div>
-                        </div>
-                    </div><!-- container  -->  
-                        <div class="themesflat-spacer clearfix" data-desktop="63" data-mobile="20" data-smobile="20"></div>                  
-            </div>
-            <div class="tf-partners partners-style2">
-                <div class="banners-z">
-                    <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="0" data-column="4" data-column2="2" data-column3="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
-                        <div class="owl-carousel owl-loaded owl-drag">
-                            <div class="image-profolio style2">
-                                <div class="image">
-                                    <img src="images/Carosel/imgowl1.jpg" alt="images">
-                                </div>
-                                <div class="profolio-show profolio-show-style2">
-                                                <div class="content-title text-left tf-text-hv">
-                                                  <h4 class="margin-botom5"><span>Nec vehicula </span></h4>
-                                                  <a href="study-details.html">Maximus libero ornare </a>
-                                                </div>
-                                                <div class="btn-tab">
-                                                  <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>
-                                                </div>
-                                </div>
-                            </div>
-
-                            <div class="image-profolio style2">
-                                <div class="image">
-                                    <img src="images/Carosel/imgowl2.jpg" alt="images">
-                                </div>
-                    
-                                <div class="profolio-show profolio-show-style2">
-                                    <div class="content-title text-left tf-text-hv">
-                                        <h4 class="margin-botom5"><span>Nec vehicula </span></h4>
-                                            <a href="study-details.html">Maximus libero ornare </a>
-                                    </div>
-                                    <div class="btn-tab">
-                                        <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="image-profolio style2">
-                                <div class="image">
-                                    <img src="images/Carosel/imgowl3.jpg" alt="images">
-                                </div>
-                    
-                                <div class="profolio-show profolio-show-style2  active">
-                                        <div class="content-title text-left tf-text-hv">
-                                            <h4 class="margin-botom5"><span>Nec vehicula </span></h4>
-                                            <a href="study-details.html">Maximus libero ornare </a>
-                                        </div>
-                                        <div class="btn-tab">
-                                            <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-
-                            <div class="image-profolio style2">
-                                <div class="image">
-                                    <img src="images/Carosel/imgowl4.jpg" alt="images">
-                                </div>
-                    
-                                <div class="profolio-show profolio-show-style2">
-                                    <div class="content-title text-left tf-text-hv">
-                                        <h4 class="margin-botom5"><span>Nec vehicula </span></h4>
-                                        <a href="study-details.html">Maximus libero ornare </a>
-                                        </div>
-                                    <div class="btn-tab">
-                                        <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- partners -->
-        </section>
+{#        <section class="portfolio-slider">#}
+{#            <div class="portfolio-nav bg-color-style3 clearfix">   #}
+{#                <div class="themesflat-spacer clearfix" data-desktop="93" data-mobile="20" data-smobile="20"></div>#}
+{#                    <div class="container ">#}
+{#                        <div class="title-nav flex">                           #}
+{#                            <div class="title-section wow fadeInDown">#}
+{#                                <div class="sub-title color-style1">Portfolio</div>#}
+{#                                <div class="flat-title color-style1">Case Study</div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div><!-- container  -->  #}
+{#                        <div class="themesflat-spacer clearfix" data-desktop="63" data-mobile="20" data-smobile="20"></div>                  #}
+{#            </div>#}
+{#            <div class="tf-partners partners-style2">#}
+{#                <div class="banners-z">#}
+{#                    <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="0" data-column="4" data-column2="2" data-column3="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">#}
+{#                        <div class="owl-carousel owl-loaded owl-drag">#}
+{#                            <div class="image-profolio style2">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Carosel/imgowl1.jpg' %}" alt="images">#}
+{#                                </div>#}
+{#                                <div class="profolio-show profolio-show-style2">#}
+{#                                                <div class="content-title text-left tf-text-hv">#}
+{#                                                  <h4 class="margin-botom5"><span>Nec vehicula </span></h4>#}
+{#                                                  <a href="study-details.html">Maximus libero ornare </a>#}
+{#                                                </div>#}
+{#                                                <div class="btn-tab">#}
+{#                                                  <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>#}
+{#                                                </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="image-profolio style2">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Carosel/imgowl2.jpg' %}" alt="images">#}
+{#                                </div>#}
+{#                    #}
+{#                                <div class="profolio-show profolio-show-style2">#}
+{#                                    <div class="content-title text-left tf-text-hv">#}
+{#                                        <h4 class="margin-botom5"><span>Nec vehicula </span></h4>#}
+{#                                            <a href="study-details.html">Maximus libero ornare </a>#}
+{#                                    </div>#}
+{#                                    <div class="btn-tab">#}
+{#                                        <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="image-profolio style2">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Carosel/imgowl3.jpg' %}" alt="images">#}
+{#                                </div>#}
+{#                    #}
+{#                                <div class="profolio-show profolio-show-style2  active">#}
+{#                                        <div class="content-title text-left tf-text-hv">#}
+{#                                            <h4 class="margin-botom5"><span>Nec vehicula </span></h4>#}
+{#                                            <a href="study-details.html">Maximus libero ornare </a>#}
+{#                                        </div>#}
+{#                                        <div class="btn-tab">#}
+{#                                            <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>#}
+{#                                        </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="image-profolio style2">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Carosel/imgowl4.jpg' %}" alt="images">#}
+{#                                </div>#}
+{#                    #}
+{#                                <div class="profolio-show profolio-show-style2">#}
+{#                                    <div class="content-title text-left tf-text-hv">#}
+{#                                        <h4 class="margin-botom5"><span>Nec vehicula </span></h4>#}
+{#                                        <a href="study-details.html">Maximus libero ornare </a>#}
+{#                                        </div>#}
+{#                                    <div class="btn-tab">#}
+{#                                        <a href="study-details.html"><i class="fas fa-arrow-right"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div> <!-- partners -->#}
+{#        </section>#}
 
 
         <section class="tf-testimonials clearfix">
@@ -921,7 +814,7 @@
                     <div class="owl-carousel wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="tf-image-box text-center bg-color-style2 hv-background-before-style2">
                             <div class="image">
-                                <img src="images/Secsion/imgtestimonio3.jpg" alt="images">
+                                <img src="{% static 'images/Secsion/imgtestimonio3.jpg' %}" alt="images">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <p class="pd-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo luctus gravida a in ipsum.</p>
@@ -933,7 +826,7 @@
 
                         <div class="tf-image-box active style2 text-center bg-color hv-background-before-style2 ">
                             <div class="image">
-                                <img src="images/Secsion/imgtestimonio4.jpg" alt="images">
+                                <img src="{% static 'images/Secsion/imgtestimonio4.jpg' %}" alt="images">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <p class="pd-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo luctus gravida a in ipsum.</p>
@@ -945,7 +838,7 @@
 
                         <div class="tf-image-box text-center bg-color-style2 hv-background-before-style2">
                             <div class="image">
-                                <img src="images/Secsion/imgtestimonio5.jpg" alt="images">
+                                <img src="{% static 'images/Secsion/imgtestimonio5.jpg' %}" alt="images">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </div>
                             <p class="pd-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo luctus gravida a in ipsum.</p>
@@ -1010,94 +903,94 @@
             <div class="themesflat-spacer  clearfix" data-desktop="120" data-mobile="60" data-smobile="50"></div>  
         </section>
 
-        <section class="tf-blog-new bg-color-style2">
-            <div class="container">
-                
-                <div class="tf-blog">
-                    <div class="title-section text-center wow fadeInDown">
-                        <div class="sub-title">Latest News</div>
-                        <div class="flat-title">Our Insights & Articles</div>
-                    </div>
-
-                    <div class="themesflat-spacer  clearfix" data-desktop="61" data-mobile="40" data-smobile="30" ></div>    
-
-                </div>
-                <div class="blog-new">
-                    <!-- col-md-4 -->
-                    <div  class="flat-carousel-box data-effect clearfix"  data-zero="0" data-gap="30" data-column="3" data-column2="1" data-column3="1"  data-dots="false" data-auto="true" data-nav="false" data-loop="true" >
-                        <div class="owl-carousel wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="image-box">
-                                <div class="image">
-                                    <img src="images/Blog/imgblog1.jpg" alt="" />
-                                </div>
-                                <div class="meta-blog-style2">
-                                        <span class="entry-calendar">
-                                            <a href="blog-details.html"><i class="far fa-folder-open"></i>Home Gardening</a >
-                                        </span>
-                                </div> <!-- post-calendar -->
-                                <div class="content-blog-style2 bg-color">
-                                    <span class="admin tf-text-hv">
-                                        <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>
-                                    </span>
-                                    <div class="title-blog tf-text-hv">
-                                        <a href="blog-details.html">Mauris neque nisiibus non elementum</a>
-                                    </div>
-                                    <div class="date">
-                                        28 JANUARY, 2020
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="image-box">
-                                <div class="image">
-                                    <img src="images/Blog/imgblog2.jpg" alt="" />
-                                </div>
-                                <div class="meta-blog-style2">
-                                    <span class="entry-calendar entry-calendar-style1">
-                                        <a href="blog-details.html"><i class="far fa-folder-open"></i>Gardening Ideas</a >
-                                    </span>
-                                </div> <!-- post-calendar -->
-                                    <div class="content-blog-style2 pd-style1 bg-color">
-                                        <span class="admin tf-text-hv">
-                                            <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>
-                                        </span>
-                                        <div class="title-blog tf-text-hv">
-                                            <a href="blog-details.html">Quisque suscipit ipsum est, eu venenatis leo</a>
-                                        </div>
-                                        <div class="date">
-                                            28 JANUARY, 2020
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="image-box">
-                                <div class="image">
-                                    <img src="images/Blog/imgblog3.jpg" alt="" />
-                                </div>
-                                <div class="meta-blog-style2">
-                                    <span class="entry-calendar entry-calendar-style1">
-                                        <a href="blog-details.html"><i class="far fa-folder-open"></i>Gardening Ideas</a >
-                                    </span>
-                                </div> <!-- post-calendar -->
-                                <div class="content-blog-style2 pd-style2 bg-color">
-                                    <span class="admin tf-text-hv">
-                                        <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>
-                                    </span>
-                                    <div class="title-blog tf-text-hv">
-                                        <a href="blog-details.html">Maecenas interdum lorem eleifend orci aliquam</a>
-                                    </div>
-                                    <div class="date">
-                                            28 JANUARY, 2020
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="themesflat-spacer  clearfix" data-desktop="120" data-mobile="60" data-smobile="50"></div>  
-       
-        </section>
+{#        <section class="tf-blog-new bg-color-style2">#}
+{#            <div class="container">#}
+{#                #}
+{#                <div class="tf-blog">#}
+{#                    <div class="title-section text-center wow fadeInDown">#}
+{#                        <div class="sub-title">Latest News</div>#}
+{#                        <div class="flat-title">Our Insights & Articles</div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="themesflat-spacer  clearfix" data-desktop="61" data-mobile="40" data-smobile="30" ></div>    #}
+{##}
+{#                </div>#}
+{#                <div class="blog-new">#}
+{#                    <!-- col-md-4 -->#}
+{#                    <div  class="flat-carousel-box data-effect clearfix"  data-zero="0" data-gap="30" data-column="3" data-column2="1" data-column3="1"  data-dots="false" data-auto="true" data-nav="false" data-loop="true" >#}
+{#                        <div class="owl-carousel wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms">#}
+{#                            <div class="image-box">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Blog/imgblog1.jpg' %}" alt="" />#}
+{#                                </div>#}
+{#                                <div class="meta-blog-style2">#}
+{#                                        <span class="entry-calendar">#}
+{#                                            <a href="blog-details.html"><i class="far fa-folder-open"></i>Home Gardening</a >#}
+{#                                        </span>#}
+{#                                </div> <!-- post-calendar -->#}
+{#                                <div class="content-blog-style2 bg-color">#}
+{#                                    <span class="admin tf-text-hv">#}
+{#                                        <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>#}
+{#                                    </span>#}
+{#                                    <div class="title-blog tf-text-hv">#}
+{#                                        <a href="blog-details.html">Mauris neque nisiibus non elementum</a>#}
+{#                                    </div>#}
+{#                                    <div class="date">#}
+{#                                        28 JANUARY, 2020#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#        #}
+{#                            <div class="image-box">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Blog/imgblog2.jpg' %}" alt="" />#}
+{#                                </div>#}
+{#                                <div class="meta-blog-style2">#}
+{#                                    <span class="entry-calendar entry-calendar-style1">#}
+{#                                        <a href="blog-details.html"><i class="far fa-folder-open"></i>Gardening Ideas</a >#}
+{#                                    </span>#}
+{#                                </div> <!-- post-calendar -->#}
+{#                                    <div class="content-blog-style2 pd-style1 bg-color">#}
+{#                                        <span class="admin tf-text-hv">#}
+{#                                            <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>#}
+{#                                        </span>#}
+{#                                        <div class="title-blog tf-text-hv">#}
+{#                                            <a href="blog-details.html">Quisque suscipit ipsum est, eu venenatis leo</a>#}
+{#                                        </div>#}
+{#                                        <div class="date">#}
+{#                                            28 JANUARY, 2020#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                            </div>#}
+{#                            <div class="image-box">#}
+{#                                <div class="image">#}
+{#                                    <img src="{% static 'images/Blog/imgblog3.jpg' %}" alt="" />#}
+{#                                </div>#}
+{#                                <div class="meta-blog-style2">#}
+{#                                    <span class="entry-calendar entry-calendar-style1">#}
+{#                                        <a href="blog-details.html"><i class="far fa-folder-open"></i>Gardening Ideas</a >#}
+{#                                    </span>#}
+{#                                </div> <!-- post-calendar -->#}
+{#                                <div class="content-blog-style2 pd-style2 bg-color">#}
+{#                                    <span class="admin tf-text-hv">#}
+{#                                        <a href="blog-details.html"><i class="far fa-user"></i>By Admin</a>#}
+{#                                    </span>#}
+{#                                    <div class="title-blog tf-text-hv">#}
+{#                                        <a href="blog-details.html">Maecenas interdum lorem eleifend orci aliquam</a>#}
+{#                                    </div>#}
+{#                                    <div class="date">#}
+{#                                            28 JANUARY, 2020#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    #}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="themesflat-spacer  clearfix" data-desktop="120" data-mobile="60" data-smobile="50"></div>  #}
+{#       #}
+{#        </section>#}
 
 
         <section class="questions">
@@ -1117,7 +1010,7 @@
                     <div class="image-form wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image-hoverstyle2">
                             <div class="image">
-                                <img src="images/Secsion/imgquestion.jpg" alt="images" />
+                                <img src="{% static 'images/Secsion/imgquestion.jpg' %}" alt="images" />
                             </div>
                             <div class="contact">
                                 <div class="time">
@@ -1125,7 +1018,7 @@
                                     <div class="content">
                                         <div class="text"><span>Working Hours</span></div>
                                         <div class="text-time">
-                                        <span>Mon - Sat 9.00 to 17.00</span>
+                                        <span>Mon - Sat 9.00 to 18.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1133,7 +1026,7 @@
                                     <span class="icon-phone icon-phone-style2"></span>
                                     <div class="content padding-top7">
                                         <div class="text"><span>Call Us</span></div>
-                                        <div class="text-time"><span>360-779-2228</span></div>
+                                        <div class="text-time"><span>+44 01612209955</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -1182,141 +1075,141 @@
                     <!-- /container -->
             </div>
         </section>
+{% endblock %}
 
-
-        <footer id="footer" class="footer footer-h2">
-            <div class="overlay-ft"></div>
-            <div class="themesflat-spacer clearfix" data-desktop="381" data-mobile="80" data-smobile="80"></div>
-            <div class="container">
-                <div class="footer-widget clearfix">
-                    <div class="row">
-                        <div class="col-sm-3 no-padding-right clearfix">
-                            <div class="logo clearfix">
-                            <a href="index.html"> <img src="logo/Logolight.png"  alt="images" data-retina="logo/Logolight@2x.png"></a>
-                            </div>
-                            <p>
-                            Lorem ipsum dolor sit amet, cons etetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor
-                            </p>
-                            <div class="topbar-socials">
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="icon-socialgg"></i></a>
-                            <a href="#"><i class="icon-socialin"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 footer-widget-style1">         
-                            <div class="footer-contact">
-                            <div class="title-ft">Contact</div>
-                    
-                    
-                            <div class="tf-info call-us">
-                            <i class="icon-call-us margintop-3"></i>
-                            <div class="content-call-us">
-                                <div class="text">
-                                <span>2416 Mapleview Drive</span>
-                                </div>
-                                <div class="text"><span>Tampa, FL 33634</span></div>
-                            </div>
-                            </div>
-                    
-                            <div class="tf-info mail">
-                            <i class="icon-mail"></i>
-                            <div class="content-mail">
-                                <div class="text"><span>contact@website.com</span></div>
-                                <div class="text"><span>Info@mail.com</span></div>
-                            </div>
-                            </div>
-                    
-                            <div class="tf-info phone">
-                            <i class="icon-phone"></i>
-                            <div class="content-phone">
-                                <div class="text"><span>0029129102320</span></div>
-                                <div class="text"><span>000 2324 39493</span></div>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 footer-widget-style1">
-                            <div class="link">
-                            <div class="title-ft">Useful Links</div>
-                            <ul>
-                            <li><a href="service.html">Conditions</a></li>
-                            <li><a href="service.html">Terms of Use</a></li>
-                            <li><a href="service.html">Our Services</a></li>
-                            <li><a href="service.html">Join as a Doctor</a></li>
-                            <li><a href="service.html">New Guests List</a></li>
-                            <li><a href="service.html">The Team List</a></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 footer-widget-style1">
-                            <div class="subscribe">
-                            <div class="title-ft">Subscribe</div>
-                            <form
-                            action="#"
-                            class="form-email"
-                            >
-                            <input type="text" class="email-here" placeholder="Email" required/>
-                            <button class="font-style border-corner themesflat-button-style2 btn-style-4">
-                                <span class="btn-title">Subscribe</span>
-                            </button>
-                            </form>
-                            <p>
-                            Get the latest updates via email. Any time you may unsubscribe
-                            </p>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-                
-                
-                <div id="botom">
-                      <div class="bottom-wrap text-center">
-                        <div id="copyright">
-                          <a href="#"><span> © Themesflat</span></a> <span class="color-botom">2020 | All Rights Reserved</span> 
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </footer>
-    </div> <!-- /.boxed -->
-    <div class="button-go-top">
-        <a href="#" title="" class="go-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Javascript -->
-
-    <script src="javascript/jquery.min.js"></script>
-    <script src="javascript/plugins.js"></script>
-    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-    <script src="javascript/parallax.js"></script>
-    <script type="text/javascript" src="javascript/jquery-countTo.js"></script>
-    <script type="text/javascript" src="javascript/jquery.easing.js"></script>
-    <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-    <script type="text/javascript" src="javascript/waypoints.min.js"></script>
-    <script type="text/javascript" src="javascript/main.js"></script>
-    <script type="text/javascript" src="javascript/wow.min.js"></script>
-    <!--owl.carousel-->
-    <script type="text/javascript" src="javascript/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="javascript/animsition.js"></script>
-
-    <!-- slider -->
-    <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
-    <script src="javascript/rev-slider.js"></script>
-
-    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.actions.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.carousel.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.kenburn.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.layeranimation.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.migration.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.navigation.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
-    <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
-</body>
-</html>
+{#        <footer id="footer" class="footer footer-h2">#}
+{#            <div class="overlay-ft"></div>#}
+{#            <div class="themesflat-spacer clearfix" data-desktop="381" data-mobile="80" data-smobile="80"></div>#}
+{#            <div class="container">#}
+{#                <div class="footer-widget clearfix">#}
+{#                    <div class="row">#}
+{#                        <div class="col-sm-6 no-padding-right clearfix">#}
+{#                            <div class="logo clearfix">#}
+{#                            <a href="index.html"> <img src="{% static 'logo/Logo.png' %}"  alt="images" data-retina="logo/Logolight@2x.png"></a>#}
+{#                            </div>#}
+{#                            <p>#}
+{#                            Lorem ipsum dolor sit amet, cons etetur sadipscing elitr, sed#}
+{#                            diam nonumy eirmod tempor#}
+{#                            </p>#}
+{#                            <div class="topbar-socials">#}
+{#                            <a href="#"><i class="fab fa-facebook-square"></i></a>#}
+{#                            <a href="#"><i class="fab fa-twitter"></i></a>#}
+{#                            <a href="#"><i class="icon-socialgg"></i></a>#}
+{#                            <a href="#"><i class="icon-socialin"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-sm-6 footer-widget-style1">#}
+{#                            <div class="footer-contact">#}
+{#                            <div class="title-ft">Contact</div>#}
+{#                    #}
+{#                    #}
+{#                            <div class="tf-info call-us">#}
+{#                            <i class="icon-call-us margintop-3"></i>#}
+{#                            <div class="content-call-us">#}
+{#                                <div class="text">#}
+{#                                <span>Unit A, Compass Street, Openshaw, Manchester</span>#}
+{#                                </div>#}
+{#                                <div class="text"><span>M11 2FS</span></div>#}
+{#                            </div>#}
+{#                            </div>#}
+{#                    #}
+{#                            <div class="tf-info mail">#}
+{#                            <i class="icon-mail"></i>#}
+{#                            <div class="content-mail">#}
+{#                                <div class="text"><span>newlifewindows@live.co.uk</span></div>#}
+{#                                <div class="text"><span>newlifepanels@gmail.com</span></div>#}
+{#                            </div>#}
+{#                            </div>#}
+{#                    #}
+{#                            <div class="tf-info phone">#}
+{#                            <i class="icon-phone"></i>#}
+{#                            <div class="content-phone">#}
+{#                                <div class="text"><span>+44 01612209955</span></div>#}
+{#                                <div class="text"><span>Fax: +44 01612209966</span></div>#}
+{#                            </div>#}
+{#                            </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-sm-3 footer-widget-style1">#}
+{#                            <div class="link">#}
+{#                            <div class="title-ft">Useful Links</div>#}
+{#                            <ul>#}
+{#                            <li><a href="service.html">Conditions</a></li>#}
+{#                            <li><a href="service.html">Terms of Use</a></li>#}
+{#                            <li><a href="service.html">Our Services</a></li>#}
+{#                            <li><a href="service.html">Join as a Doctor</a></li>#}
+{#                            <li><a href="service.html">New Guests List</a></li>#}
+{#                            <li><a href="service.html">The Team List</a></li>#}
+{#                            </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-sm-3 footer-widget-style1">#}
+{#                            <div class="subscribe">#}
+{#                            <div class="title-ft">Subscribe</div>#}
+{#                            <form#}
+{#                            action="#"#}
+{#                            class="form-email"#}
+{#                            >#}
+{#                            <input type="text" class="email-here" placeholder="Email" required/>#}
+{#                            <button class="font-style border-corner themesflat-button-style2 btn-style-4">#}
+{#                                <span class="btn-title">Subscribe</span>#}
+{#                            </button>#}
+{#                            </form>#}
+{#                            <p>#}
+{#                            Get the latest updates via email. Any time you may unsubscribe#}
+{#                            </p>#}
+{#                            </div>#}
+{#                            </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                #}
+{#                #}
+{#                <div id="botom">#}
+{#                      <div class="bottom-wrap text-center">#}
+{#                        <div id="copyright">#}
+{#                          <a href="#"><span> © Newlife Windows</span></a> <span class="color-botom">2021 | All Rights Reserved</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </footer>#}
+{#    </div> <!-- /.boxed -->#}
+{#    <div class="button-go-top">#}
+{#        <a href="#" title="" class="go-top">#}
+{#            <i class="fa fa-chevron-up"></i>#}
+{#        </a>#}
+{#    </div>#}
+{##}
+{#    <!-- Javascript -->#}
+{##}
+{#    <script src="{% static 'javascript/jquery.min.js' %}"></script>#}
+{#    <script src="{% static 'javascript/plugins.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/bootstrap.min.js' %}"></script>#}
+{#    <script src="javascript/parallax.js"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery-countTo.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery.easing.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/jquery.cookie.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/waypoints.min.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/wow.min.js' %}"></script>#}
+{#    <!--owl.carousel-->#}
+{#    <script type="text/javascript" src="{% static 'javascript/owl.carousel.min.js' %}"></script>#}
+{#    <script type="text/javascript" src="{% static 'javascript/animsition.js' %}"></script>#}
+{##}
+{#    <!-- slider -->#}
+{#    <script src="{% static 'rev-slider/js/jquery.themepunch.revolution.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/jquery.themepunch.tools.min.js' %}"></script>#}
+{#    <script src="{% static 'javascript/rev-slider.js' %}"></script>#}
+{##}
+{#    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.actions.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.carousel.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.kenburn.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.layeranimation.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.migration.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.navigation.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js' %}"></script>#}
+{#    <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.video.min.js' %}"></script>#}
+{#</body>#}
+{#</html>#}

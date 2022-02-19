@@ -265,19 +265,19 @@
     } 
 
     var retinaLogos = function() {
-      var retina = window.devicePixelRatio > 1 ? true : false;
+      // var retina = window.devicePixelRatio > 1 ? true : false;
 
-        if(retina) {
-            $('.logo').find('img').attr( {src:'./logo/LogoDark@2x.png',width:'159',height:'70'} );   
-        }
+        // if(retina) {
+        //     $('.logo').find('img').attr( {src:"{% static './logo/LogoDark@2x.png' %}",width:'159',height:'70'} );
+        // }
     };  
 
     var retinaLogos2 = function() {
-        var retina = window.devicePixelRatio > 1 ? true : false;
-  
-          if(retina) {
-              $('#footer').find('img').attr( {src:'./logo/Logolight@2x.png'} );   
-          }
+        // var retina = window.devicePixelRatio > 1 ? true : false;
+        //
+        //   if(retina) {
+        //       $('#footer').find('img').attr( {src:'./logo/Logolight@2x.png'} );
+        //   }
     };   
 
     var goTop = function () {
