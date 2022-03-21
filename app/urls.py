@@ -25,6 +25,7 @@ urlpatterns = [
     path('page_door', doorPage, name='page_door'),
     path('page_contact', contactPage, name='page_contact'),
     path('company_info', companyInfo, name='company_info'),
+    path('service_detail', serviceDetail, name='company_info'),
 ]
 
 # urlpatterns += staticfiles_urlpatterns()

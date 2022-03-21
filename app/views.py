@@ -19,3 +19,6 @@ def contactPage(request):
 
 def companyInfo(request):
     return render(request, 'about-company-infomation.html')
+
+def serviceDetail(request):
+    return render(request, 'service-details.html')
