@@ -100,6 +100,7 @@ pros_env
 venv
 .venv
 venv1
+env
 .env
 db.sqlite3
 filter_prospects/db_connection.py
