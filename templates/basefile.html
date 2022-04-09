@@ -34,14 +34,18 @@
 <body class="counter-scroll header_sticky_style2">
     <div class="animsition boxed blog">
             <div class="top-bar-style2 clearfix">
-                <div class="container-fluid">
+                <div class="row">
                     <ul class="top-content">
+                        <div class="col-sm-4">
                         <li class="adress">
                           <a href="#"><i class="icon-iconmap"></i> Unit A, Compass Street, Openshaw, Manchester, M11 2FS</a>
                         </li>
+                            </div>
+                        <div class="col-sm-4">
                         <li class="email"><i class="icon-iconmail"></i> <a href="#">Newlifewindows@live.co.uk, newlifepanels@gmail.com</a></li>
-                      </ul>
-
+                    </div>
+                    </ul>
+<div class="col-sm-4">
                     <div class="topbar-socials">
                       <span class="icons">
                         <a href="https://www.facebook.com/New-Life-Windows-106383301005971/"><i class="fab fa-facebook-f"></i></a>
@@ -50,6 +54,7 @@
                         <a href="https://www.instagram.com/newlifewindows/"><i class="fab fa-instagram"></i></a>
                       </span>
                     </div>
+    </div>
                 </div>
             </div>
     <header class="header-style2 bg-color-style2 bg-color" id="header">
@@ -271,4 +276,26 @@
     <script src="{% static 'rev-slider/js/extensions/extensionsrevolution.extension.video.min.js' %}"></script>
 
 </body>
+<script>
+    $(document).ready(function (){
+        let path = window.location.pathname;
+        alert(path)
+        $('#mainnav li').removeClass("current-menu current-menu-item");
+        if(path="/"){
+            $('[href="/"]').parent().addClass("current-menu current-menu-item");
+        }
+        else if(path="/page_window"){
+            $('[href="/page_window"]').parent().addClass("current-menu current-menu-item");
+        }
+        else if(path="/page_door"){
+            $('[href="/page_door"]').parent().addClass("current-menu current-menu-item");
+        }
+        else if(path="/company_info"){
+            $('[href="/company_info"]').parent().addClass("current-menu current-menu-item");
+        }
+        else if(path="/page_contact"){
+            $('[href="/page_contact"]').parent().addClass("current-menu current-menu-item");
+        }
+    });
+</script>
 </html>
